@@ -26,13 +26,16 @@ This project demonstrates the deployment of a microservices-based application us
 
 ## My Responsibilities
 
-- Provisioned cloud infrastructure
-- Managed containerized workloads
-- Implemented CI/CD pipelines
-- Configured monitoring and alerting solutions
-- Automated deployment processes
-- 
+- Provisioned AWS infrastructure using Terraform
+- Managed containerized applications with Docker and Kubernetes
+- Implemented CI/CD pipelines using Jenkins
+- Configured monitoring and observability with Prometheus and Grafana
+- Automated deployment and release processes
+- Managed source control and collaboration workflows using Git and GitHub
+  
 ## Architecture
+
+The following sections describe the original Spring PetClinic microservices architecture and application components used as the foundation of this project.
 # Distributed version of the Spring PetClinic Sample Application built with Spring Cloud 
 
 [![Build Status](https://travis-ci.org/spring-petclinic/spring-petclinic-microservices.svg?branch=master)](https://travis-ci.org/spring-petclinic/spring-petclinic-microservices/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
