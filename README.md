@@ -1,3 +1,38 @@
+# Petclinic Microservices Platform
+
+This project demonstrates the deployment of a microservices-based application using modern DevOps practices and cloud-native technologies.
+
+## Technologies Used
+
+- AWS
+- Kubernetes
+- Docker
+- Jenkins
+- Terraform
+- Ansible
+- Prometheus
+- Grafana
+- Git & GitHub
+
+## Project Highlights
+
+- Containerized microservices architecture
+- Kubernetes deployments and service management
+- CI/CD pipeline implementation using Jenkins
+- Infrastructure provisioning with Terraform
+- Configuration management with Ansible
+- Monitoring and observability using Prometheus and Grafana
+- Automated deployment workflows
+
+## My Responsibilities
+
+- Provisioned cloud infrastructure
+- Managed containerized workloads
+- Implemented CI/CD pipelines
+- Configured monitoring and alerting solutions
+- Automated deployment processes
+- 
+## Architecture
 # Distributed version of the Spring PetClinic Sample Application built with Spring Cloud 
 
 [![Build Status](https://travis-ci.org/spring-petclinic/spring-petclinic-microservices.svg?branch=master)](https://travis-ci.org/spring-petclinic/spring-petclinic-microservices/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
