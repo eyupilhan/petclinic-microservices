@@ -1,5 +1,8 @@
-Petclinic Microservices Platform (AWS DevOps Implementation)
-Overview
+# Petclinic Microservices Platform on AWS
+
+## End-to-End DevOps Implementation
+
+## Overview
 
 This project demonstrates a complete cloud-native microservices platform deployed on AWS using modern DevOps practices.
 
@@ -7,29 +10,40 @@ The original Spring Petclinic microservices application was extended and deploye
 
 The goal of this project is to simulate a production-grade microservices deployment pipeline using industry-standard DevOps tools.
 
-🧱 Architecture Overview
+---
 
-This system is built using a distributed microservices architecture:
+## Architecture Overview
 
-API Gateway
-Config Server
-Discovery Server (Eureka)
-Customers Service
-Vets Service
-Visits Service
-Admin Server
-🛠️ Technologies Used
-AWS (EC2, VPC, IAM)
-Docker
-Kubernetes
-Jenkins (CI/CD Pipeline)
-Terraform (Infrastructure as Code)
-Ansible (Configuration Management)
-Prometheus (Monitoring)
-Grafana (Visualization)
-Spring Boot Microservices
-Git & GitHub
-📦 Repository Structure
+This project is based on a distributed Spring Boot microservices architecture consisting of:
+
+* API Gateway
+* Config Server
+* Discovery Server (Eureka)
+* Customers Service
+* Vets Service
+* Visits Service
+* Admin Server
+
+---
+
+## Technologies Used
+
+* AWS (EC2, VPC, IAM)
+* Terraform
+* Docker
+* Kubernetes
+* Jenkins
+* Ansible
+* Prometheus
+* Grafana
+* Spring Boot
+* Git & GitHub
+
+---
+
+## Repository Structure
+
+```text
 .
 ├── infrastructure/        # Terraform configurations
 ├── ansible/               # Deployment automation
@@ -39,7 +53,13 @@ Git & GitHub
 ├── docs/                  # Architecture diagrams & screenshots
 ├── spring-petclinic-*     # Microservices modules
 └── README.md
-🔄 CI/CD Pipeline
+```
+
+---
+
+## CI/CD Pipeline
+
+```text
 Developer Push
       │
       ▼
@@ -55,7 +75,7 @@ Terraform Infrastructure Provisioning
 Docker Image Build
       │
       ▼
-Push to Registry (ECR)
+Push to Amazon ECR
       │
       ▼
 Ansible / Kubernetes Deployment
@@ -65,44 +85,81 @@ Running Microservices on AWS
       │
       ▼
 Monitoring with Prometheus & Grafana
-📊 Monitoring & Observability
-Prometheus collects application and infrastructure metrics
-Grafana dashboards visualize system performance
-Health checks for microservices
-Distributed system observability
-🎯 Key Features
-End-to-end CI/CD automation
-Microservices architecture deployment
-Infrastructure as Code (Terraform)
-Configuration management with Ansible
-Container orchestration with Docker & Kubernetes
-Monitoring & observability stack integration
-Cloud deployment on AWS
-🧠 My Responsibilities
-Designed and implemented AWS infrastructure using Terraform
-Built CI/CD pipelines using Jenkins
-Containerized microservices using Docker
-Deployed services using Kubernetes
-Configured Ansible automation workflows
-Integrated Prometheus & Grafana monitoring stack
-Managed full deployment lifecycle
-📈 Learning Outcomes
+```
 
-Through this project, I gained experience in:
+---
 
-Designing production-grade microservice architectures
-Automating cloud infrastructure provisioning
-Building CI/CD pipelines from scratch
-Kubernetes-based deployment strategies
-Observability and monitoring in distributed systems
-End-to-end DevOps workflow implementation
-📌 Notes
+## Project Preview
 
-This project is part of a DevOps portfolio and demonstrates real-world practices in cloud infrastructure, automation, and microservices deployment.
+### Architecture
 
-It is not intended for production use without additional enhancements such as:
+![Architecture](docs/microservices-architecture-diagram.jpg)
 
-Security hardening
-Auto-scaling policies
-Centralized logging (ELK stack)
-Advanced monitoring rules
+### Application
+
+![Application](docs/application-screenshot.png)
+
+### Monitoring
+
+![Grafana Dashboard](docs/grafana-custom-metrics-dashboard.png)
+
+---
+
+## Key Features
+
+* End-to-end CI/CD automation
+* Microservices architecture deployment
+* Infrastructure as Code (Terraform)
+* Configuration management with Ansible
+* Container orchestration with Docker & Kubernetes
+* Monitoring and observability using Prometheus & Grafana
+* Cloud deployment on AWS
+
+---
+
+## Monitoring & Observability
+
+* Prometheus metrics collection
+* Grafana dashboards
+* Application health monitoring
+* Infrastructure observability
+
+---
+
+## My Responsibilities
+
+* Designed and provisioned AWS infrastructure using Terraform
+* Built CI/CD pipelines with Jenkins
+* Containerized microservices using Docker
+* Deployed workloads to Kubernetes
+* Automated deployments using Ansible
+* Integrated Prometheus and Grafana for monitoring
+* Managed the complete deployment lifecycle
+
+---
+
+## Learning Outcomes
+
+Through this project, I gained practical experience with:
+
+* Designing production-grade microservices architectures
+* Infrastructure provisioning with Terraform
+* Building end-to-end CI/CD pipelines
+* Kubernetes-based application deployment
+* Containerization with Docker
+* Monitoring distributed systems using Prometheus and Grafana
+* End-to-end DevOps workflow implementation
+
+---
+
+## Notes
+
+This project is part of my Cloud & DevOps portfolio and demonstrates practical experience with cloud infrastructure, automation, and microservices deployment.
+
+It is intended for learning and portfolio purposes and would require additional enhancements for production environments, including:
+
+* Security hardening
+* Auto Scaling
+* Centralized logging (ELK/OpenSearch)
+* Secret management (AWS Secrets Manager or HashiCorp Vault)
+* Advanced monitoring and alerting
